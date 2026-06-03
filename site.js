@@ -10,6 +10,7 @@
     { slug: "video", title: "Video Assets", href: "video" },
     { slug: "css", title: "CSS Assets", href: "css" },
     { slug: "errors", title: "Error Pages", href: "errors" },
+    { slug: "script", title: "Script Assets", href: "script" },
     { slug: "misc", title: "Miscellaneous Assets", href: "misc" },
   ];
 
