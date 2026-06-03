@@ -236,5 +236,12 @@
     "snippet": "Basic colour coded logging functions",
     "href": "/script/logging.sh",
     "display": "row"
+  },
+  {
+    "title": "notify.js",
+    "section": "script",
+    "snippet": "Basic notification banner display",
+    "href": "/script/notify.js",
+    "display": "row"
   }
 ]
