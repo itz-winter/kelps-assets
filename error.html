@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Error — Assets</title>
+  <link rel="stylesheet" href="/style/ammonite.css">
+  <script src="/style/theme-init.js"></script>
+  <style>
+    .error-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 5rem 2rem;
+      gap: 1rem;
+    }
+
+    .error-code {
+      font-size: 6rem;
+      font-weight: 900;
+      color: var(--brand-primary);
+      line-height: 1;
+      letter-spacing: -4px;
+    }
+
+    .error-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin: 0;
+    }
+
+    .error-desc {
+      color: var(--text-secondary);
+      font-size: 1rem;
+      max-width: 420px;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .error-btn {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 10px 24px;
+      background: var(--brand-primary);
+      color: #000;
+      border-radius: var(--radius);
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: opacity .15s;
+    }
+
+    .error-btn:hover {
+      opacity: 0.85;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header"><button class="sidebar-toggle">&#9776;</button><a class="site-logo" href="/">Assets</a>
+  </header>
+  <div class="site-body">
+    <aside class="sidebar"></aside>
+    <div class="sidebar-backdrop"></div>
+    <main class="content">
+      <div class="content-inner">
+        <div class="error-wrap">
+          <div class="error-code" id="err-code"></div>
+          <p class="error-title" id="err-title"></p>
+          <p class="error-desc" id="err-desc"></p>
+          <a class="error-btn" href="https://assets.kelpw.ing">Return to Homepage</a>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="/site.js"></script>
+  <script>
+    ADoc.init();
+    (function () {
+      var ERRORS = {
+        400: { title: "Bad Request",                      desc: "The server couldn't understand your request. Please check the URL and try again." },
+        401: { title: "Unauthorized",                     desc: "Authentication is required. Please log in and try again." },
+        402: { title: "Payment Required",                 desc: "This resource requires payment to access." },
+        403: { title: "Access Forbidden",                 desc: "You don't have permission to view this page." },
+        404: { title: "Page Not Found",                   desc: "The page you're looking for doesn't exist or may have been moved." },
+        405: { title: "Method Not Allowed",               desc: "The HTTP method used is not supported for this resource." },
+        406: { title: "Not Acceptable",                   desc: "The server can't produce a response matching the request's accepted formats." },
+        407: { title: "Proxy Auth Required",              desc: "Proxy authentication is required before this request can be served." },
+        408: { title: "Request Timeout",                  desc: "The server took too long to respond. Please try again." },
+        409: { title: "Conflict",                         desc: "The request conflicts with the current state of the server." },
+        410: { title: "Gone",                             desc: "The requested resource has been permanently removed." },
+        411: { title: "Length Required",                  desc: "The request must include a valid Content-Length header." },
+        412: { title: "Precondition Failed",              desc: "A precondition in the request headers was not met." },
+        413: { title: "Payload Too Large",                desc: "The request body is larger than the server is willing to accept." },
+        414: { title: "URI Too Long",                     desc: "The URL provided is too long for the server to process." },
+        415: { title: "Unsupported Media Type",           desc: "The media type of the request is not supported by the server." },
+        416: { title: "Range Not Satisfiable",            desc: "The range specified in the request can't be fulfilled." },
+        417: { title: "Expectation Failed",               desc: "The server can't meet the requirements of the Expect request header." },
+        418: { title: "I'm a Teapot",                     desc: "The server refuses to brew coffee because it is a teapot." },
+        421: { title: "Misdirected Request",              desc: "The request was directed at a server unable to produce a response." },
+        422: { title: "Unprocessable Content",            desc: "The request was well-formed but contains semantic errors." },
+        423: { title: "Locked",                           desc: "The resource you are trying to access is locked." },
+        424: { title: "Failed Dependency",                desc: "The request failed because a previous request it depended on failed." },
+        425: { title: "Too Early",                        desc: "The server is unwilling to risk processing a replayed request." },
+        426: { title: "Upgrade Required",                 desc: "The client should switch to a different protocol." },
+        428: { title: "Precondition Required",            desc: "The server requires the request to be conditional." },
+        429: { title: "Too Many Requests",                desc: "You've sent too many requests in a short time. Please wait a moment and try again." },
+        431: { title: "Headers Too Large",                desc: "The request headers are too large for the server to process." },
+        451: { title: "Unavailable For Legal Reasons",   desc: "This resource has been made unavailable due to legal demands." },
+        500: { title: "Internal Server Error",            desc: "Something went wrong on our end. Please try again later." },
+        501: { title: "Not Implemented",                  desc: "The server doesn't support the functionality required to fulfill the request." },
+        502: { title: "Bad Gateway",                      desc: "The server received an invalid response from an upstream server." },
+        503: { title: "Service Unavailable",              desc: "The service is temporarily unavailable. Please try again in a moment." },
+        504: { title: "Gateway Timeout",                  desc: "The upstream server didn't respond in time. Please try again later." },
+        505: { title: "HTTP Version Not Supported",       desc: "The server doesn't support the HTTP version used in the request." },
+        506: { title: "Variant Also Negotiates",          desc: "The server has a configuration error in content negotiation." },
+        507: { title: "Insufficient Storage",             desc: "The server doesn't have enough storage to complete the request." },
+        508: { title: "Loop Detected",                    desc: "The server detected an infinite loop while processing the request." },
+        510: { title: "Not Extended",                     desc: "Further extensions to the request are required for the server to fulfil it." },
+        511: { title: "Network Auth Required",            desc: "You need to authenticate to gain network access." },
+      };
+      var DEFAULT = { title: "Something Went Wrong", desc: "An unexpected error occurred. Please try returning to the homepage." };
+
+      var code = 0;
+      // 1. Check ?code= query param (for previews/demos)
+      try {
+        var params = new URLSearchParams(window.location.search);
+        if (params.get('code')) code = parseInt(params.get('code'), 10);
+      } catch (e) {}
+      // 2. Fall back to actual HTTP response status
+      if (!code) {
+        try {
+          var nav = performance.getEntriesByType("navigation")[0];
+          if (nav && nav.responseStatus && nav.responseStatus !== 200) {
+            code = nav.responseStatus;
+          }
+        } catch (e) {}
+      }
+      if (!code) code = 404;
+
+      var info = ERRORS[code] || DEFAULT;
+      document.getElementById("err-code").textContent = code;
+      document.getElementById("err-title").textContent = info.title;
+      document.getElementById("err-desc").textContent = info.desc;
+      document.title = code + " " + info.title + " — Assets";
+    })();
+  </script>
+</body>
+
+</html>

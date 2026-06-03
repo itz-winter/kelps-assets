@@ -1,0 +1,10 @@
+/dev/* 
+/experimental/*
+/temp/*
+/legacy/* # old code that i dont want to delete but also dont want to commit/share either due to it being really bad code or vulnerable code that i dont want to share
+
+/ignore/* # yeah ofc a directory named "ignore" should be ignored why else would it be named that?
+
+/backup/* # useless backup files (literally just a full copy of the site lmfaoo)
+
+/tumblr/* # tumblr backup theme files for my blog - not sure if i want to share them or not but for now im just gonna ignore them

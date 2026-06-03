@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Assets — Assets</title>
+  <link rel="stylesheet" href="/style/ammonite.css">
+  <script src="/style/theme-init.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <button class="sidebar-toggle">&#9776;</button>
+    <a class="site-logo" href="/">Assets</a>
+  </header>
+  <div class="site-body">
+    <aside class="sidebar"></aside>
+    <div class="sidebar-backdrop"></div>
+    <main class="content">
+      <div class="content-inner">
+        <div class="page-header">
+          <div class="breadcrumb"><a href="/">Assets</a> <span>/</span> <span>CSS Assets</span></div>
+          <h1>CSS Assets</h1>
+          <p>Stylesheets used across Kelpwing's sites, available to reference or link directly.</p>
+        </div>
+
+        <div id="asset-list"></div>
+
+        <div class="doc-section">
+          <h2>Usage</h2>
+          <p>Link a stylesheet directly from this CDN in your <code>&lt;head&gt;</code>:</p>
+          <div class="highlight">
+            <code>&lt;link rel="stylesheet" href="https://assets.kelpw.ing/style/ammonite.css"&gt;</code>
+          </div>
+          <p>The stylesheets are served with <code>Access-Control-Allow-Origin: *</code> and can be fetched cross-origin.</p>
+        </div>
+
+        <div class="page-nav"></div>
+      </div>
+    </main>
+  </div>
+  <script src="/site.js"></script>
+  <script>ADoc.init('css'); ADoc.renderAssets('css');</script>
+</body>
+</html>

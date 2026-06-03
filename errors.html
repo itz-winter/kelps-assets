@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Error Pages — Assets</title>
+  <link rel="stylesheet" href="/style/ammonite.css">
+  <script src="/style/theme-init.js"></script>
+  <style>
+    .error-demo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 1rem;
+      margin: 1.25rem 0;
+    }
+    .error-demo-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      text-align: center;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+      transition: border-color .15s, transform .15s;
+    }
+    .error-demo-card:hover {
+      border-color: var(--brand-primary);
+      transform: translateY(-2px);
+      text-decoration: none;
+      color: inherit;
+    }
+    .error-demo-code {
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--brand-primary);
+      line-height: 1;
+    }
+    .error-demo-title {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <button class="sidebar-toggle">&#9776;</button>
+    <a class="site-logo" href="/">Assets</a>
+  </header>
+  <div class="site-body">
+    <aside class="sidebar"></aside>
+    <div class="sidebar-backdrop"></div>
+    <main class="content">
+      <div class="content-inner">
+        <div class="page-header">
+          <div class="breadcrumb"><a href="/">Assets</a> <span>/</span> <span>Error Pages</span></div>
+          <h1>Error Pages</h1>
+          <p>Themed HTTP error pages used across Kelpwing's sites.</p>
+        </div>
+
+        <div class="doc-section">
+          <h2>Preview Error Pages</h2>
+          <p>Click any code below to preview that error page. The page auto-detects the HTTP status from the response and displays the appropriate message.</p>
+          <div class="error-demo-grid">
+            <a class="error-demo-card" href="/error.html?code=400"><span class="error-demo-code">400</span><span class="error-demo-title">Bad Request</span></a>
+            <a class="error-demo-card" href="/error.html?code=401"><span class="error-demo-code">401</span><span class="error-demo-title">Unauthorized</span></a>
+            <a class="error-demo-card" href="/error.html?code=402"><span class="error-demo-code">402</span><span class="error-demo-title">Payment Required</span></a>
+            <a class="error-demo-card" href="/error.html?code=403"><span class="error-demo-code">403</span><span class="error-demo-title">Forbidden</span></a>
+            <a class="error-demo-card" href="/error.html?code=404"><span class="error-demo-code">404</span><span class="error-demo-title">Not Found</span></a>
+            <a class="error-demo-card" href="/error.html?code=405"><span class="error-demo-code">405</span><span class="error-demo-title">Method Not Allowed</span></a>
+            <a class="error-demo-card" href="/error.html?code=406"><span class="error-demo-code">406</span><span class="error-demo-title">Not Acceptable</span></a>
+            <a class="error-demo-card" href="/error.html?code=407"><span class="error-demo-code">407</span><span class="error-demo-title">Proxy Auth Required</span></a>
+            <a class="error-demo-card" href="/error.html?code=408"><span class="error-demo-code">408</span><span class="error-demo-title">Request Timeout</span></a>
+            <a class="error-demo-card" href="/error.html?code=409"><span class="error-demo-code">409</span><span class="error-demo-title">Conflict</span></a>
+            <a class="error-demo-card" href="/error.html?code=410"><span class="error-demo-code">410</span><span class="error-demo-title">Gone</span></a>
+            <a class="error-demo-card" href="/error.html?code=411"><span class="error-demo-code">411</span><span class="error-demo-title">Length Required</span></a>
+            <a class="error-demo-card" href="/error.html?code=412"><span class="error-demo-code">412</span><span class="error-demo-title">Precondition Failed</span></a>
+            <a class="error-demo-card" href="/error.html?code=413"><span class="error-demo-code">413</span><span class="error-demo-title">Payload Too Large</span></a>
+            <a class="error-demo-card" href="/error.html?code=414"><span class="error-demo-code">414</span><span class="error-demo-title">URI Too Long</span></a>
+            <a class="error-demo-card" href="/error.html?code=415"><span class="error-demo-code">415</span><span class="error-demo-title">Unsupported Media Type</span></a>
+            <a class="error-demo-card" href="/error.html?code=416"><span class="error-demo-code">416</span><span class="error-demo-title">Range Not Satisfiable</span></a>
+            <a class="error-demo-card" href="/error.html?code=417"><span class="error-demo-code">417</span><span class="error-demo-title">Expectation Failed</span></a>
+            <a class="error-demo-card" href="/error.html?code=418"><span class="error-demo-code">418</span><span class="error-demo-title">I'm a Teapot</span></a>
+            <a class="error-demo-card" href="/error.html?code=421"><span class="error-demo-code">421</span><span class="error-demo-title">Misdirected Request</span></a>
+            <a class="error-demo-card" href="/error.html?code=422"><span class="error-demo-code">422</span><span class="error-demo-title">Unprocessable Content</span></a>
+            <a class="error-demo-card" href="/error.html?code=423"><span class="error-demo-code">423</span><span class="error-demo-title">Locked</span></a>
+            <a class="error-demo-card" href="/error.html?code=424"><span class="error-demo-code">424</span><span class="error-demo-title">Failed Dependency</span></a>
+            <a class="error-demo-card" href="/error.html?code=425"><span class="error-demo-code">425</span><span class="error-demo-title">Too Early</span></a>
+            <a class="error-demo-card" href="/error.html?code=426"><span class="error-demo-code">426</span><span class="error-demo-title">Upgrade Required</span></a>
+            <a class="error-demo-card" href="/error.html?code=428"><span class="error-demo-code">428</span><span class="error-demo-title">Precondition Required</span></a>
+            <a class="error-demo-card" href="/error.html?code=429"><span class="error-demo-code">429</span><span class="error-demo-title">Too Many Requests</span></a>
+            <a class="error-demo-card" href="/error.html?code=431"><span class="error-demo-code">431</span><span class="error-demo-title">Headers Too Large</span></a>
+            <a class="error-demo-card" href="/error.html?code=451"><span class="error-demo-code">451</span><span class="error-demo-title">Unavailable For Legal Reasons</span></a>
+            <a class="error-demo-card" href="/error.html?code=500"><span class="error-demo-code">500</span><span class="error-demo-title">Internal Server Error</span></a>
+            <a class="error-demo-card" href="/error.html?code=501"><span class="error-demo-code">501</span><span class="error-demo-title">Not Implemented</span></a>
+            <a class="error-demo-card" href="/error.html?code=502"><span class="error-demo-code">502</span><span class="error-demo-title">Bad Gateway</span></a>
+            <a class="error-demo-card" href="/error.html?code=503"><span class="error-demo-code">503</span><span class="error-demo-title">Service Unavailable</span></a>
+            <a class="error-demo-card" href="/error.html?code=504"><span class="error-demo-code">504</span><span class="error-demo-title">Gateway Timeout</span></a>
+            <a class="error-demo-card" href="/error.html?code=505"><span class="error-demo-code">505</span><span class="error-demo-title">HTTP Version Not Supported</span></a>
+            <a class="error-demo-card" href="/error.html?code=506"><span class="error-demo-code">506</span><span class="error-demo-title">Variant Also Negotiates</span></a>
+            <a class="error-demo-card" href="/error.html?code=507"><span class="error-demo-code">507</span><span class="error-demo-title">Insufficient Storage</span></a>
+            <a class="error-demo-card" href="/error.html?code=508"><span class="error-demo-code">508</span><span class="error-demo-title">Loop Detected</span></a>
+            <a class="error-demo-card" href="/error.html?code=510"><span class="error-demo-code">510</span><span class="error-demo-title">Not Extended</span></a>
+            <a class="error-demo-card" href="/error.html?code=511"><span class="error-demo-code">511</span><span class="error-demo-title">Network Auth Required</span></a>
+          </div>
+        </div>
+
+        <div class="doc-section">
+          <h2>Supported Status Codes</h2>
+          <p>The error page automatically displays the correct title and description for these codes:</p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Code</th><th>Title</th><th>Description</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><code>400</code></td><td>Bad Request</td><td>The server couldn't understand your request.</td></tr>
+                <tr><td><code>401</code></td><td>Unauthorized</td><td>Authentication is required to access this resource.</td></tr>
+                <tr><td><code>402</code></td><td>Payment Required</td><td>This resource requires payment to access.</td></tr>
+                <tr><td><code>403</code></td><td>Access Forbidden</td><td>You don't have permission to view this page.</td></tr>
+                <tr><td><code>404</code></td><td>Page Not Found</td><td>The page doesn't exist or may have been moved.</td></tr>
+                <tr><td><code>405</code></td><td>Method Not Allowed</td><td>The HTTP method is not supported for this resource.</td></tr>
+                <tr><td><code>406</code></td><td>Not Acceptable</td><td>The server can't produce a response in an accepted format.</td></tr>
+                <tr><td><code>407</code></td><td>Proxy Auth Required</td><td>Proxy authentication is required.</td></tr>
+                <tr><td><code>408</code></td><td>Request Timeout</td><td>The server took too long to respond.</td></tr>
+                <tr><td><code>409</code></td><td>Conflict</td><td>The request conflicts with the current state of the server.</td></tr>
+                <tr><td><code>410</code></td><td>Gone</td><td>The requested resource has been permanently removed.</td></tr>
+                <tr><td><code>411</code></td><td>Length Required</td><td>The request must include a Content-Length header.</td></tr>
+                <tr><td><code>412</code></td><td>Precondition Failed</td><td>A precondition in the request headers was not met.</td></tr>
+                <tr><td><code>413</code></td><td>Payload Too Large</td><td>The request body exceeds what the server accepts.</td></tr>
+                <tr><td><code>414</code></td><td>URI Too Long</td><td>The URL is too long for the server to process.</td></tr>
+                <tr><td><code>415</code></td><td>Unsupported Media Type</td><td>The request's media type is not supported.</td></tr>
+                <tr><td><code>416</code></td><td>Range Not Satisfiable</td><td>The requested range cannot be fulfilled.</td></tr>
+                <tr><td><code>417</code></td><td>Expectation Failed</td><td>The server can't meet the Expect header requirements.</td></tr>
+                <tr><td><code>418</code></td><td>I'm a Teapot</td><td>The server refuses to brew coffee because it is a teapot.</td></tr>
+                <tr><td><code>421</code></td><td>Misdirected Request</td><td>The request was directed at a server unable to respond.</td></tr>
+                <tr><td><code>422</code></td><td>Unprocessable Content</td><td>The request is well-formed but contains semantic errors.</td></tr>
+                <tr><td><code>423</code></td><td>Locked</td><td>The resource is currently locked.</td></tr>
+                <tr><td><code>424</code></td><td>Failed Dependency</td><td>The request failed due to a previous failed request.</td></tr>
+                <tr><td><code>425</code></td><td>Too Early</td><td>The server is unwilling to risk processing a replayed request.</td></tr>
+                <tr><td><code>426</code></td><td>Upgrade Required</td><td>The client should switch to a different protocol.</td></tr>
+                <tr><td><code>428</code></td><td>Precondition Required</td><td>The server requires the request to be conditional.</td></tr>
+                <tr><td><code>429</code></td><td>Too Many Requests</td><td>Too many requests in a short time.</td></tr>
+                <tr><td><code>431</code></td><td>Headers Too Large</td><td>The request headers are too large to process.</td></tr>
+                <tr><td><code>451</code></td><td>Unavailable For Legal Reasons</td><td>This resource is unavailable due to legal demands.</td></tr>
+                <tr><td><code>500</code></td><td>Internal Server Error</td><td>Something went wrong on the server.</td></tr>
+                <tr><td><code>501</code></td><td>Not Implemented</td><td>The server doesn't support this functionality.</td></tr>
+                <tr><td><code>502</code></td><td>Bad Gateway</td><td>Invalid response from upstream server.</td></tr>
+                <tr><td><code>503</code></td><td>Service Unavailable</td><td>Service is temporarily unavailable.</td></tr>
+                <tr><td><code>504</code></td><td>Gateway Timeout</td><td>Upstream server didn't respond in time.</td></tr>
+                <tr><td><code>505</code></td><td>HTTP Version Not Supported</td><td>The HTTP version in the request is not supported.</td></tr>
+                <tr><td><code>506</code></td><td>Variant Also Negotiates</td><td>Server configuration error in content negotiation.</td></tr>
+                <tr><td><code>507</code></td><td>Insufficient Storage</td><td>The server lacks storage to complete the request.</td></tr>
+                <tr><td><code>508</code></td><td>Loop Detected</td><td>An infinite loop was detected while processing the request.</td></tr>
+                <tr><td><code>510</code></td><td>Not Extended</td><td>Further extensions are required to fulfil this request.</td></tr>
+                <tr><td><code>511</code></td><td>Network Auth Required</td><td>You need to authenticate to gain network access.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="doc-section">
+          <h2>Nginx Configuration</h2>
+          <p>To use these error pages in nginx, add the following to your server block:</p>
+          <div class="highlight">
+            <code>error_page 400 403 404 408 429 500 502 503 504 /error.html;</code>
+          </div>
+        </div>
+
+        <div class="page-nav"></div>
+      </div>
+    </main>
+  </div>
+  <script src="/site.js"></script>
+  <script>ADoc.init('errors');</script>
+</body>
+</html>

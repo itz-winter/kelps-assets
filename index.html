@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assets — kelpw.ing</title>
+  <link rel="stylesheet" href="/style/ammonite.css">
+  <script src="/style/theme-init.js"></script>
+  <style>
+    .index-hero {
+      padding: 2rem 0 1.5rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2rem;
+    }
+    .index-hero h1 {
+      margin: 0 0 0.5rem;
+      font-size: 2rem;
+    }
+    .index-hero p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 1rem;
+      max-width: 560px;
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1.25rem;
+      margin: 1.25rem 0 2rem;
+    }
+    .category-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      text-decoration: none;
+      transition: transform .15s, box-shadow .15s, border-color .15s;
+      box-shadow: var(--shadow);
+    }
+    .category-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--brand-primary);
+      text-decoration: none;
+    }
+    .category-card-icon {
+      font-size: 1.5rem;
+      line-height: 1;
+      margin-bottom: 0.25rem;
+    }
+    .category-card-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin: 0;
+    }
+    .category-card-desc {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <button class="sidebar-toggle">&#9776;</button>
+    <a class="site-logo" href="/">Assets</a>
+  </header>
+  <div class="site-body">
+    <aside class="sidebar"></aside>
+    <div class="sidebar-backdrop"></div>
+    <main class="content">
+      <div class="content-inner">
+
+        <div class="index-hero">
+          <h1>Assets</h1>
+          <p>A public CDN for images, stylesheets, and other files used across <a href="https://www.kelpw.ing">kelpw.ing</a> and <a href="https://wiki.kelpw.ing">The Kelpwing Wiki</a>. Browse by category below or search above.</p>
+        </div>
+
+        <div class="doc-section">
+          <h2>Browse</h2>
+          <div class="category-grid">
+            <a class="category-card" href="image">
+              <div class="category-card-icon">🖼️</div>
+              <p class="category-card-title">Image Assets</p>
+              <p class="category-card-desc">Templates, patterns, and general-purpose images.</p>
+            </a>
+            <a class="category-card" href="artwork">
+              <div class="category-card-icon">🎨</div>
+              <p class="category-card-title">Artworks</p>
+              <p class="category-card-desc">Original artwork and illustrations by Kelpwing.</p>
+            </a>
+            <a class="category-card" href="reference">
+              <div class="category-card-icon">📋</div>
+              <p class="category-card-title">Reference Sheets</p>
+              <p class="category-card-desc">Character reference sheets for Kelpwing's OCs.</p>
+            </a>
+            <a class="category-card" href="audio">
+              <div class="category-card-icon">🎵</div>
+              <p class="category-card-title">Audio Assets</p>
+              <p class="category-card-desc">Sound effects and music files.</p>
+            </a>
+            <a class="category-card" href="video">
+              <div class="category-card-icon">🎬</div>
+              <p class="category-card-title">Video Assets</p>
+              <p class="category-card-desc">Animations, timelapses, and video files.</p>
+            </a>
+            <a class="category-card" href="css">
+              <div class="category-card-icon">🎨</div>
+              <p class="category-card-title">CSS Assets</p>
+              <p class="category-card-desc">Stylesheets available to link from the CDN.</p>
+            </a>
+            <a class="category-card" href="errors">
+              <div class="category-card-icon">⚠️</div>
+              <p class="category-card-title">Error Pages</p>
+              <p class="category-card-desc">Custom error page templates used on kelpw.ing.</p>
+            </a>
+            <a class="category-card" href="misc">
+              <div class="category-card-icon">📦</div>
+              <p class="category-card-title">Miscellaneous</p>
+              <p class="category-card-desc">Everything else — icons, signatures, and more.</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="doc-section">
+          <h2>Usage</h2>
+          <p>All assets are served from <code>https://assets.kelpw.ing/</code> and are publicly accessible. To link an asset directly, use its full URL:</p>
+          <div class="highlight">
+            <code>https://assets.kelpw.ing/artwork/ammonite.png</code>
+          </div>
+          <p>CSS files support cross-origin access and can be linked directly in any page's <code>&lt;head&gt;</code>:</p>
+          <div class="highlight">
+            <code>&lt;link rel="stylesheet" href="https://assets.kelpw.ing/style/ammonite.css"&gt;</code>
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+  <script src="/site.js"></script>
+  <script>ADoc.init('');</script>
+</body>
+</html>

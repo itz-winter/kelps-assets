@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Assets — Assets</title>
+  <link rel="stylesheet" href="/style/ammonite.css">
+  <script src="/style/theme-init.js"></script>
+  <style>
+    .asset-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin: 1.25rem 0;
+    }
+    .asset-row {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      transition: border-color .15s;
+    }
+    .asset-row:hover { border-color: var(--brand-primary); }
+    .asset-row-info { flex: 1; }
+    .asset-row-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin: 0 0 0.25rem;
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    }
+    .asset-row-desc { font-size: 0.875rem; color: var(--text-muted); margin: 0; }
+    audio { width: 100%; margin-top: 0.5rem; accent-color: var(--brand-primary); }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <button class="sidebar-toggle">&#9776;</button>
+    <a class="site-logo" href="/">Assets</a>
+  </header>
+  <div class="site-body">
+    <aside class="sidebar"></aside>
+    <div class="sidebar-backdrop"></div>
+    <main class="content">
+      <div class="content-inner">
+        <div class="page-header">
+          <div class="breadcrumb"><a href="/">Assets</a> <span>/</span> <span>Audio Assets</span></div>
+          <h1>Audio Assets</h1>
+          <p>Sound effects, music, and other audio files by Kelpwing.</p>
+        </div>
+
+        <div id="asset-list"></div>
+
+        <div class="page-nav"></div>
+      </div>
+    </main>
+  </div>
+  <script src="/site.js"></script>
+  <script>ADoc.init('audio'); ADoc.renderAssets('audio');</script>
+</body>
+</html>

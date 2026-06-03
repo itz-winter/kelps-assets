@@ -1,0 +1,233 @@
+[
+  {
+    "title": "index.html",
+    "section": "html",
+    "snippet": "Main page of the website",
+    "href": "/index.html"
+  },
+  {
+    "title": "ammonite.png",
+    "section": "artwork",
+    "group": "Gallery",
+    "snippet": "Ammonite (he/him) — Misc image",
+    "href": "/artwork/ammonite.png",
+    "display": "card"
+  },
+  {
+    "title": "bloom.png",
+    "section": "artwork",
+    "group": "Gallery",
+    "snippet": "Bloom (she/her) — Preview image",
+    "href": "/artwork/bloom.png",
+    "display": "card"
+  },
+  {
+    "title": "kelp.png",
+    "section": "artwork",
+    "group": "Gallery",
+    "snippet": "Kelp (they/them) — Artwork",
+    "href": "/artwork/kelp.png",
+    "display": "card"
+  },
+  {
+    "title": "that-day.jpg",
+    "section": "artwork",
+    "group": "Gallery",
+    "snippet": "Artwork of Kelp & Chrysanthemum",
+    "href": "/artwork/that-day.jpg",
+    "display": "card"
+  },
+  {
+    "title": "ammonite-favicon.ico",
+    "section": "artwork",
+    "group": "Icons & Favicons",
+    "snippet": "Ammonite (he/him) — Favicon image",
+    "href": "/artwork/ammonite-favicon.ico",
+    "display": "card"
+  },
+  {
+    "title": "kelp.png",
+    "section": "reference",
+    "group": "Characters",
+    "snippet": "Kelp (they/them) — Reference sheet",
+    "href": "/artwork/reference/kelp.png",
+    "display": "card"
+  },
+  {
+    "title": "bloom.png",
+    "section": "reference",
+    "group": "Characters",
+    "snippet": "Bloom (she/her) — Reference sheet",
+    "href": "/artwork/reference/bloom.png",
+    "display": "card"
+  },
+  {
+    "title": "azollae.png",
+    "section": "reference",
+    "group": "Characters",
+    "snippet": "Azollae (she/her) — Reference sheet",
+    "href": "/artwork/reference/azollae.png",
+    "display": "card"
+  },
+  {
+    "title": "freya.png",
+    "section": "reference",
+    "group": "Characters",
+    "snippet": "Freya (she/her) — Reference sheet",
+    "href": "/artwork/reference/freya.png",
+    "display": "card"
+  },
+  {
+    "title": "llyn-dragon.jpg",
+    "section": "reference",
+    "group": "Characters",
+    "snippet": "Llyn (she/they) — Dragon form reference",
+    "href": "/artwork/reference/llyn-dragon.jpg",
+    "display": "card"
+  },
+  {
+    "title": "template-cover-image.png",
+    "section": "image",
+    "group": "Templates",
+    "snippet": "Template cover image for the Kelpwing/Kelpling wiki",
+    "href": "/image/template-cover-image.png",
+    "display": "card"
+  },
+  {
+    "title": "af-border.png",
+    "section": "image",
+    "group": "ArtFight 2025 Border Patterns",
+    "snippet": "ArtFight 2025 — Full border image",
+    "href": "/pattern/af-border.png",
+    "display": "card"
+  },
+  {
+    "title": "top-left.png",
+    "section": "image",
+    "group": "ArtFight 2025 Border Patterns",
+    "snippet": "ArtFight 2025 — Top left pattern",
+    "href": "/pattern/top-left.png",
+    "display": "card"
+  },
+  {
+    "title": "bottom-left.png",
+    "section": "image",
+    "group": "ArtFight 2025 Border Patterns",
+    "snippet": "ArtFight 2025 — Bottom left pattern",
+    "href": "/pattern/bottom-left.png",
+    "display": "card"
+  },
+  {
+    "title": "bottom-right.png",
+    "section": "image",
+    "group": "ArtFight 2025 Border Patterns",
+    "snippet": "ArtFight 2025 — Bottom right pattern",
+    "href": "/pattern/bottom-right.png",
+    "display": "card"
+  },
+  {
+    "title": "ammonite.css",
+    "section": "css",
+    "group": "Stylesheets",
+    "snippet": "Main documentation stylesheet — dark green theme with sidebar layout",
+    "href": "/style/ammonite.css",
+    "cdn": "https://assets.kelpw.ing/style/ammonite.css",
+    "display": "row"
+  },
+  {
+    "title": "dawn.css",
+    "section": "css",
+    "group": "Stylesheets",
+    "snippet": "Main website stylesheet — light grey theme with top navigation layout",
+    "href": "/style/dawn.css",
+    "cdn": "https://assets.kelpw.ing/style/dawn.css",
+    "display": "row"
+  },
+  {
+    "title": "ember.css",
+    "section": "css",
+    "group": "Stylesheets",
+    "snippet": "Main website stylesheet — light red theme with top navigation layout",
+    "href": "/style/ember.css",
+    "cdn": "https://assets.kelpw.ing/style/ember.css",
+    "display": "row"
+  },
+  {
+    "title": "midnight.css",
+    "section": "css",
+    "group": "Stylesheets",
+    "snippet": "Main website stylesheet — dark blue theme with top navigation layout",
+    "href": "/style/midnight.css",
+    "cdn": "https://assets.kelpw.ing/style/midnight.css",
+    "display": "row"
+  },
+  {
+    "title": "ocean.css",
+    "section": "css",
+    "group": "Stylesheets",
+    "snippet": "Main website stylesheet — light blue theme with top navigation layout",
+    "href": "/style/ocean.css",
+    "cdn": "https://assets.kelpw.ing/style/ocean.css",
+    "display": "row"
+  },
+  {
+    "title": "paper.css",
+    "section": "css",
+    "group": "Stylesheets",
+    "snippet": "Main website stylesheet — light theme with top navigation layout",
+    "href": "/style/paper.css",
+    "cdn": "https://assets.kelpw.ing/style/paper.css",
+    "display": "row"
+  },
+  {
+    "title": "rose.css",
+    "section": "css",
+    "group": "Stylesheets",
+    "snippet": "Main website stylesheet — pink theme with top navigation layout",
+    "href": "/style/rose.css",
+    "cdn": "https://assets.kelpw.ing/style/rose.css",
+    "display": "row"
+  },
+  {
+    "title": "slate.css",
+    "section": "css",
+    "group": "Stylesheets",
+    "snippet": "Main website stylesheet — dark navy theme with top navigation layout",
+    "href": "/style/slate.css",
+    "cdn": "https://assets.kelpw.ing/style/slate.css",
+    "display": "row"
+  },
+  {
+    "title": "twilight.css",
+    "section": "css",
+    "group": "Stylesheets",
+    "snippet": "Main website stylesheet — dark purple theme with top navigation layout",
+    "href": "/style/twilight.css",
+    "cdn": "https://assets.kelpw.ing/style/twilight.css",
+    "display": "row"
+  },
+  {
+    "title": "ammonite.png",
+    "section": "misc",
+    "group": "Site Files",
+    "snippet": "Ammonite mascot image — used as the pagedoll on profile page",
+    "href": "/artwork/ammonite.png",
+    "display": "row"
+  },
+  {
+    "title": "favicon.ico",
+    "section": "misc",
+    "group": "Site Files",
+    "snippet": "Site favicon used across (most) kelpw.ing subdomains",
+    "href": "/favicon.ico",
+    "display": "row"
+  },
+  {
+    "title": "signature_supertiny.png",
+    "section": "misc",
+    "group": "Site Files",
+    "snippet": "Kelpwing signature image, used in page footers",
+    "href": "/image/signature_supertiny.png",
+    "display": "row"
+  }
+]
