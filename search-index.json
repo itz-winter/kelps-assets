@@ -229,5 +229,12 @@
     "snippet": "Kelpwing signature image, used in page footers",
     "href": "/image/signature_supertiny.png",
     "display": "row"
+  },
+  {
+    "title": "logging.sh",
+    "section": "scripts",
+    "snippet": "Basic colour coded logging functions",
+    "href": "/script/logging.sh",
+    "display": "row"
   }
 ]
