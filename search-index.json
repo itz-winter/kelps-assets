@@ -232,7 +232,7 @@
   },
   {
     "title": "logging.sh",
-    "section": "scripts",
+    "section": "script",
     "snippet": "Basic colour coded logging functions",
     "href": "/script/logging.sh",
     "display": "row"
